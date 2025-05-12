@@ -8,3 +8,5 @@ sudo sed -i '' '/facebook\.com/d' /etc/hosts
 
 echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts > /dev/null
 echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts > /dev/null
+
+echo "Host resolution updated: localhost -> 127.0.0.2, facebook.com -> 8.8.8.8"
